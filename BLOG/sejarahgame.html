@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>HI!Tech | Blog</title>
+</head>
+
+<body style="background-image: url('putih.jpg')">
+
+    <header>
+        <div class="header-container">
+            <h1>-= Welcome to HI!Tech =-</h1>
+        </div>
+    </header>
+
+    <!--navbar-->
+    <nav>
+        <div class="wrapper">
+            <div class="logo">Hi!tech</div>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="bukutamu.php" class="tbl-biru">Buku Tamu</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+   
+    <div class="content-blog">
+        <div class="container text-center">
+            <h2>SEJARAH GAME</h2><br>
+            <div class="row">
+                <img src="sejarahgame.jpg" style=" margin: 10px;">
+                <i>HI!Tech, 6 Januari 2023.</i>
+                <br>
+                <p class="paragraf">video game pertama kali ditampilkan pada sekitar tahun 1940-an di sebuah pameran
+                    dunia. Dengan Edward U. Condon mendesain komputer yang dapat memainkan permainan tradisional Nim.
+                    Ketika bermain video game Nim, para pemain harus menghindari untuk mengambil batang terakhir, tapi
+                    permainan tersebut 90 persen dimenangkan oleh komputer. Pada 1952, profesor asal Inggris bernama A.S
+                    Douglas menciptakan video game yang disebut dengan OXO untuk disertasinya di University of
+                    Cambridge. Video game tersebut mirip dengan permainan tic-tac-toe, dengan bertemakan interaksi antar
+                    manusia dengan komputer. Pada 1955, akibat perang yang berkepanjangan, membuat game perang mulai
+                    banyak diciptakan. Pihak militer Amerika Serikat juga mendesain game yang bernama Huspitel. Video
+                    game Huspitel tersebut dimainkan dengan cara pemain merah melawan pemain biru. Kedua warna tersbut
+                    mencerminkan tentara NATO dan Uni Soviet.</p>
+                   
+
+            </div>
+            <div class="tombol">
+                <button type="button" class="btn btn-primary" >&#9668; <a href="blog.html" style="color: white;" >Previous</a></button>
+              </div>
+        </div>
+    </div>
+
+
+
+    <br></div>
+
+    <div id="FOOTER">
+        <div class="container text-center">
+            <div class="wrapper">
+                <div class="row">
+                    <div class="col">
+                        <h3>Hitech</h3>
+                        <p>Website Membahas Teknologi Terbaru</p>
+                    </div>
+                    <div class="col">
+                        <h3>Social</h3>
+                        <p><b>instagram</b><a
+                                href="https://www.instagram.com/_dxnav?igsh=azNuaTJ3M3gweDlv&utm_source=qr">
+                                @_Daniaaq</a></p>
+                    </div>
+                    <div class="col">
+                        <h3>Waktu Kunjungan</h3>
+
+                        <p id="tanggal">
+                        <p>
+                        <div class="jam_digital" id="jam_digital">
+                            <div class="kotak">
+                                <p id="jam"></p>
+                            </div>
+                            <div class="kotak">
+                                <p id="menit"></p>
+                            </div>
+                            <div class="kotak">
+                                <p id="detik"></p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        var tgl = new Date();
+        document.getElementById("tanggal").innerHTML = "Waktu Kunjungan " + tgl;
+
+        window.setTimeout("waktu()", 1000);
+        function waktu() {
+            var waktu = new Date();
+            ssetTimeout("waktu()", 1000);
+            document.getElementById("jam").innerHTML = waktu.getHours();
+            document.getElementById("menit").innerHTML = waktu.getMinutes();
+            document.getElementById("detik").innerHTML = waktu.getS();
+
+
+        }
+    </script>
+
+
+
+    <div id="copyright">
+        <div class="wrapper">
+            &copy;<b>Copyright</b> 2023. <b>@_Daniaaq</b> All Rights Reserved.
+        </div>
+    </div>
+</body>
+
+</html>
